@@ -24,8 +24,17 @@ sudo pip install oh-my-vim
 oh-my-vim upgrade
 #通过oh-my-vim安装vim插件
 oh-my-vim install https://github.com/msanders/snipmate.vim.git
-oh-my-vim install https://github.com/scrooloose/syntastic.git
 oh-my-vim install https://github.com/vim-scripts/Auto-Pairs.git
+oh-my-vim install https://github.com/scrooloose/syntastic.git
+oh-my-vim install https://github.com/vim-scripts/taglist.vim.git
+oh-my-vim install https://github.com/vim-scripts/Flake8-vim.git
+oh-my-vim install https://github.com/hynek/vim-python-pep8-indent.git
+oh-my-vim install https://github.com/scrooloose/nerdtree.git
+oh-my-vim install https://github.com/vim-scripts/cscope.vim.git
+oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
+oh-my-vim install https://github.com/portante/pycscope.git
+oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
+
 
 #配置vim快捷键
 echo "imap <C-b> <Left>"  >> ~/.vimrc
