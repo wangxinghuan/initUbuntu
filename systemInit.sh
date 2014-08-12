@@ -5,21 +5,21 @@ sudo update-grub2
 sudo apt-get update 
 
 #升级firefox，然后登录firefox帐号，进行插件、书签同步
-sudo apt-get install firefox
+sudo apt-get install -y firefox
 
 #安装中文输入法
-sudo apt-get install fcitx fcitx-pinyin fcitx-table-wubi
-sudo apt-get install im-switch
+sudo apt-get install -y fcitx fcitx-pinyin fcitx-table-wubi
+sudo apt-get install -y im-switch
 im-switch -s fcitx -z default
 
 #下面是vim安装和配置
-sudo apt-get install vim
+sudo apt-get install -y vim
 #安装vim-gnome和xsel配合使用系统剪切板
-sudo apt-get install vim-gnome
-sudo apt-get install xsel
+sudo apt-get install -y vim-gnome
+sudo apt-get install -y xsel
 #安装oh-my-vim，进行vim插件管理
-sudo apt-get install python-pip
-sudo apt-get install git
+sudo apt-get install -y python-pip
+sudo apt-get install -y git
 sudo pip install oh-my-vim
 oh-my-vim upgrade
 #通过oh-my-vim安装vim插件
@@ -43,7 +43,7 @@ echo "imap <C-j> <Down>"  >> ~/.vimrc
 echo "imap <C-k> <Up>"    >> ~/.vimrc
 
 #zsh安装和配置
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 #安装oh-my-zsh进行zsh配置
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 chsh -s /bin/zsh
