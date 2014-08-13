@@ -34,6 +34,7 @@ oh-my-vim install https://github.com/vim-scripts/cscope.vim.git
 oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
 oh-my-vim install https://github.com/portante/pycscope.git
 oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
+oh-my-vim install https://github.com/aperezdc/vim-template.git
 
 
 #配置vim快捷键
@@ -41,6 +42,10 @@ echo "imap <C-b> <Left>"  >> ~/.vimrc
 echo "imap <C-f> <Right>" >> ~/.vimrc 
 echo "imap <C-j> <Down>"  >> ~/.vimrc
 echo "imap <C-k> <Up>"    >> ~/.vimrc
+echo "let mapleader = ","" >> ~/.vimrc
+echo "let g:email = "xingh1991@gmail.com"" >> ~/.vimrc
+echo "let g:username = "Albert Wang"" >> ~/.vimrc
+echo "let g:license = "GNU"" >> ~/.vimrc
 
 #zsh安装和配置
 sudo apt-get install -y zsh
