@@ -20,21 +20,41 @@ sudo apt-get install -y xsel
 #安装oh-my-vim，进行vim插件管理
 sudo apt-get install -y python-pip
 sudo apt-get install -y git
-sudo pip install oh-my-vim
-oh-my-vim upgrade
-#通过oh-my-vim安装vim插件
-oh-my-vim install https://github.com/msanders/snipmate.vim.git
-oh-my-vim install https://github.com/vim-scripts/Auto-Pairs.git
-oh-my-vim install https://github.com/scrooloose/syntastic.git
-oh-my-vim install https://github.com/vim-scripts/taglist.vim.git
-oh-my-vim install https://github.com/vim-scripts/Flake8-vim.git
-oh-my-vim install https://github.com/hynek/vim-python-pep8-indent.git
-oh-my-vim install https://github.com/scrooloose/nerdtree.git
-oh-my-vim install https://github.com/vim-scripts/cscope.vim.git
-oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
-oh-my-vim install https://github.com/portante/pycscope.git
-oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
-oh-my-vim install https://github.com/aperezdc/vim-template.git
+#sudo pip install oh-my-vim
+#oh-my-vim upgrade
+##通过oh-my-vim安装vim插件
+#oh-my-vim install https://github.com/msanders/snipmate.vim.git
+#oh-my-vim install https://github.com/vim-scripts/Auto-Pairs.git
+#oh-my-vim install https://github.com/scrooloose/syntastic.git
+#oh-my-vim install https://github.com/vim-scripts/taglist.vim.git
+#oh-my-vim install https://github.com/vim-scripts/Flake8-vim.git
+#oh-my-vim install https://github.com/hynek/vim-python-pep8-indent.git
+#oh-my-vim install https://github.com/scrooloose/nerdtree.git
+#oh-my-vim install https://github.com/vim-scripts/cscope.vim.git
+#oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
+#oh-my-vim install https://github.com/portante/pycscope.git
+#oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
+#oh-my-vim install https://github.com/aperezdc/vim-template.git
+
+sudo apt-get install g++ -y
+
+cd Downloads
+
+git clone https://github.com/wklken/k-vim.git
+sudo apt-get install ctags
+sudo apt-get install build-essential cmake python-dev
+sudo pip install pyflakes
+sudo pip install pylint
+sudo pip install pep8
+sudo apt-get install nodejs
+sudo apt-get install -g jslint
+sudo npm install -g jslint
+sudo apt-get install npm
+sudo npm install -g jslint
+sudo npm install jshint -g
+cd k-vim
+sh -x install.sh
+
 
 
 #配置vim快捷键
@@ -53,3 +73,5 @@ sudo apt-get install -y zsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 chsh -s /bin/zsh
 exit
+
+
