@@ -36,21 +36,21 @@ sudo apt-get install -y git
 #oh-my-vim install https://github.com/JCLiang/vim-cscope-utils.git
 #oh-my-vim install https://github.com/aperezdc/vim-template.git
 
-sudo apt-get install g++ -y
+sudo apt-get install -y g++ 
 
-cd Downloads
+cd ~/Downloads
 
 git clone https://github.com/wklken/k-vim.git
-sudo apt-get install ctags
-sudo apt-get install build-essential cmake python-dev
-sudo pip install pyflakes
-sudo pip install pylint
-sudo pip install pep8
-sudo apt-get install nodejs
-sudo apt-get install -g jslint
-sudo npm install -g jslint
-sudo apt-get install npm
-sudo npm install -g jslint
+sudo apt-get install -y ctags
+sudo apt-get install -y build-essential cmake python-dev
+sudo pip install -y pyflakes
+sudo pip install -y pylint
+sudo pip install -y pep8
+sudo apt-get install -y nodejs
+sudo apt-get install  -y -g jslint
+sudo npm install  -g jslint
+sudo apt-get install -y npm
+sudo npm install  -g jslint
 sudo npm install jshint -g
 cd k-vim
 sh -x install.sh
